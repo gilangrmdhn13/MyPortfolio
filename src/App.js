@@ -10,6 +10,7 @@ import TitleMessage from "./components/titleMessage/titleMessage";
 
 // Pages
 import About from "./pages/about/About";
+import Skills from "./pages/skills/Skills";
 
 import "./App.css";
 
@@ -34,6 +35,14 @@ const App = () => {
             </Fade>
           </Container>
         </Parallax>
+      </div>
+      {/* skills scetion */}
+      <div>
+        <Container className="container-box rounded">
+          <Fade duration={500}>
+            <Skills />
+          </Fade>
+        </Container>
       </div>
     </div>
   );
