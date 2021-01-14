@@ -7,10 +7,15 @@ import { Container } from "react-bootstrap";
 import MyNavbar from "./components/navbar/mynavbar";
 import MyCarousel from "./components/carousel/myCarousel";
 import TitleMessage from "./components/titleMessage/titleMessage";
+import Footer from "./components/footer/footer";
 
 // Pages
 import About from "./pages/about/About";
 import Skills from "./pages/skills/Skills";
+import Contact from "./pages/contact/Contact";
+
+import Particles from "react-particles-js";
+import { particlesOptions } from "./particlesOptions";
 
 import "./App.css";
 
@@ -20,6 +25,10 @@ const App = () => {
       <MyNavbar />
       <MyCarousel />
       <TitleMessage />
+      <Particles
+        className="particles particles-box"
+        params={particlesOptions}
+      />
 
       {/* About me section */}
       <div>
@@ -36,7 +45,8 @@ const App = () => {
           </Container>
         </Parallax>
       </div>
-      {/* skills scetion */}
+
+      {/* skills section */}
       <div>
         <Container className="container-box rounded">
           <Fade duration={500}>
@@ -44,6 +54,20 @@ const App = () => {
           </Fade>
         </Container>
       </div>
+
+      {/* contact */}
+      <div>
+        <Container className="container-box rounded">
+          <Fade duration={500}>
+            <hr />
+            <Contact />
+          </Fade>
+        </Container>
+      </div>
+
+      {/* Footer */}
+      <hr />
+      <Footer />
     </div>
   );
 };

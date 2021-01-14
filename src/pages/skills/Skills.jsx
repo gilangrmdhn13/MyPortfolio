@@ -10,7 +10,7 @@ const Skills = () => {
             <CardDeck>
                 <Row className="d-flex justify-content-around">
                     {/* Front End */}
-                    <Col md={4}>
+                    <Col>
                         <Card className="focus mt-2 mb-2">
                             <Card.Body>
                                 <Card.Title className="text-center card-title">
@@ -32,7 +32,7 @@ const Skills = () => {
                     </Col>
 
                     {/* Programming Language */}
-                    <Col md={4}>
+                    <Col>
                         <Card className="focus mt-2 mb-2">
                             <Card.Body>
                                 <Card.Title className="text-center card-title">
